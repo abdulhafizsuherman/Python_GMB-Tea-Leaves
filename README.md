@@ -22,10 +22,12 @@ will be used in the classification model testing.</p>
 optimizer parameters with comparative learning rate values of 0.1, 0.01, 0.001, and
 0.0001. The classification process is obtained with an accuracy value of 94.55%
 with Adam optimizer parameter and the learning rate used of 0.001.</p>
+    
 <h2>The Basic Concepts</h2>
 <p>Gambung tea leaves or GMB is  clone tea that has 11 superior tea clones of assamica varieties from research results from the Tea and Quinine Research Center (PPTK). 
-GMB tea leaves have various morphological variations, both in terms of shape & texture. However, It would be dificult to see with the naked eye.  
+GMB tea leaves have various morphological variations, both in terms of shape & texture. However, It would be difficult to see with the naked eye.  
 Because the level of similarity is very high due to the same crossing process. Look at the pictures, you can't compare every clones if you don't know the morphology of leaf first.
 </p>
+    <p></p>
   </body>
 </html>
