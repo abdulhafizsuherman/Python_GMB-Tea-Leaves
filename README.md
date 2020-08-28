@@ -28,6 +28,8 @@ with Adam optimizer parameter and the learning rate used of 0.001.</p>
 GMB tea leaves have various morphological variations, both in terms of shape & texture. However, It would be difficult to see with the naked eye.  
 Because the level of similarity is very high due to the same crossing process. Look at the pictures, you can't compare every clones if you don't know the morphology of leaf first.
 </p>
-    <p></p>
+<img src="Image/bentuk%20daun%20klon.jpg" alt="Bentuk Daun Klon">
+
+
   </body>
 </html>
