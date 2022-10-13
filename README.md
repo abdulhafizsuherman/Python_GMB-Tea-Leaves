@@ -37,7 +37,7 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
   
 <img src="Image/CNN.jpg" alt="CNN">  
     
-    <p>
+<p>
       The architecture that will be tested in the CNN processing method is the LeNet-5 architecture. LeNet-5 is a CNN-based architecture introduced by LeCun, et al (1998). LeNet-5 has a higher number of independent parameters or number of layers than previous CNN systems.
     </p>
     
