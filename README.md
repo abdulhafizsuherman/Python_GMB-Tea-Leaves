@@ -30,9 +30,19 @@ Because the level of similarity is very high due to the same crossing process. L
 </p>
 <img src="Image/bentuk%20daun%20klon.jpg" alt="Bentuk Daun Klon">
 
-<p>Convolutional Neural Network (CNN) is one method for processing two-dimensional images. The CNN method is the development of Multi-Layer Perception (MLP) which consists of convolution and classification learning features. CNN is a technique of DL that consists of several layers and is designed for the implementation of image and sound. CNN was first developed by Fukushima, et al (1982) and then matured by LeCun, et al (1998) by introducing the LeNet architecture on the recognition of numeric writing. Based on the architecture, CNN consists of an input layer and an output layer as in a layered hidden layer. The hidden layer on CNN consists of a convolution layer, a convolution layer in which the data weight values are processed by multiplying or multiplying other points. Values that have been convoluted will be continued with additional convolutions, namely pooling layers, fully connected layers, and normalization layers. Even though the inner layer
-colloquially referred to as convolution, it is simply by convention. Mathematically, the convolution technique is the product of shear points or cross-correlation. This has significance for indexes in an array, as it affects how weights are determined at a given index point. The convolution process can be seen in Figure 2.</p>
+<p>
+  Convolutional Neural Network (CNN) is one method for processing two-dimensional images. The CNN method is the development of Multi-Layer Perception (MLP) which consists of convolution and classification learning features. CNN is a technique of DL that consists of several layers and is designed for the implementation of image and sound. CNN was first developed by Fukushima, et al (1982) and then matured by LeCun, et al (1998) by introducing the LeNet architecture on the recognition of numeric writing. Based on the architecture, CNN consists of an input layer and an output layer as in a layered hidden layer. The hidden layer on CNN consists of a convolution layer, a convolution layer in which the data weight values are processed by multiplying or multiplying other points. Values that have been convoluted will be continued with additional convolutions, namely pooling layers, fully connected layers, and normalization layers. Even though the inner layer
+colloquially referred to as convolution, it is simply by convention. Mathematically, the convolution technique is the product of shear points or cross-correlation. This has significance for indexes in an array, as it affects how weights are determined at a given index point. The convolution process can be seen in Figure 2.
+    </p>
   
 <img src="Image/CNN.jpg" alt="CNN">  
+    
+    <p>
+      The architecture that will be tested in the CNN processing method is the LeNet-5 architecture. LeNet-5 is a CNN-based architecture introduced by LeCun, et al (1998). LeNet-5 has a higher number of independent parameters or number of layers than previous CNN systems.
+    </p>
+    
+    <img src="Image/arsitektur.jpg">
+    
+    
   </body>
 </html>
