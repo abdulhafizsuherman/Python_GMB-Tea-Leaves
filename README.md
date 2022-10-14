@@ -47,10 +47,7 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
       The architecture that will be tested in the CNN processing method is the LeNet-5 architecture. LeNet-5 is a CNN-based architecture introduced by LeCun, et al (1998). LeNet-5 has a higher number of independent parameters or number of layers than previous CNN systems.
 </p>
     
-    <figure>
-      <figcaption>Fig.1 - LeNet-5 Architecture.</figcaption>
-      <img src="Image/arsitektur.jpg", alt="arsitektur LeNet-5">
-    </figure> 
+<img src="Image/arsitektur.jpg", alt="arsitektur LeNet-5", title="Fig.1 - LeNet-5 Architecture."> 
     
     
    <p>
@@ -179,9 +176,12 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
       </tr>
     </table>
   
-   <figure>
-      <figcaption>Fig.1 - Training and Validation Opt.Adam</figcaption>
-      <img src="Image/lr=0,001;ep80%20edit.png", alt="arsitektur LeNet-5">
+  ![lr=0,001](https://user-images.githubusercontent.com/54526318/195752309-3e9a675b-32b6-4de6-aaaf-f48c87370e3e.png)
+  <img
+      src="Image/lr=0,001;ep80%20edit.png"   
+      alt="Training and Validation Opt.Adam"
+      title="Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.">
+    <figure>
     </figure>
   </body>
 </html>
