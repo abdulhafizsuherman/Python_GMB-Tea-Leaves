@@ -155,9 +155,15 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
     
    <h2>Results and Discussion</h2>
 
-   <p>Berikut adalah hasil performansi klasifikasi dengan parameter optimizer yang diuji dengan learning rate 0.001 pada Gambar 5</p>
-   
+   <p>Here are the results of the classification performance with the optimizer parameters tested with a learning rate of 0.001 in Figure 5.</p>
 
+   <figure>
+
+   ![vaccuracy](Image/learning_rate0,001.png)
+   <figcaption>Fig.5 - Accuracy validation augmentation data graph and loss optimizer validation with a learning rate of 0.001.</figcaption>
+   </figure>
+
+   <p>Accuracy with the Adam Optimizer at a learning rate of 0.001 increased very well, followed by the RMSprop optimizer but the representation level of accuracy was still lacking but still managed to maintain the quality of accuracy and loss of validation. The results of the SGD optimizer and Adagrad look quite good if we use a learning rate of 0.001.</p>
 
   <p>The training data and test data are 1100 and 880, respectively. The training data will be augmented before carrying out the classification process. The size of the image data to be classified is 64×64. Classification system modeling will be trained using the Adam optimizer with a learning rate of 0.001 and look for the best accuracy, loss, and F1-score values for the influence of these parameters.</p>
    <table>
@@ -205,18 +211,18 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
     src="Image/lr=0,001;ep80%20edit.png"   
     alt="Training and Validation Opt.Adam"
     title="Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.">
-    <figcaption>Fig.5 - Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.</figcaption>
+    <figcaption>Fig.6 - Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.</figcaption>
   </figure>
   
   <figure>
 
   ![loss-Accuracy](Image/lr=0,001;ep80%20edit%20loss.png)
-    <figcaption>Fig.6 - Graph of loss training and loss augmentation data validation with Adam optimizer and learning rate 0.001 </figcaption>
+    <figcaption>Fig.7 - Graph of loss training and loss augmentation data validation with Adam optimizer and learning rate 0.001 </figcaption>
   </figure>
   </body>
 
   <p>
-  Table 2 shows that with epoch 13, the validation accuracy value is 94.55%. The F1-score value is 94%, so the classification prediction level given by the system is very good. GMB image data with class 1 to 11 clones are said to be good in the classification process for 39 seconds and are able to obtain an accuracy value above 90%. In other words, the process of classifying the model on the architecture is very optimal. The graph of accuracy improvement in Figure 5 shows the validation accuracy performance very well seeing the difference in the value of training accuracy with validation accuracy. Figure 6 shows the loss training and validation of each epoch. It can be seen that there is no overfitting effect, and the validation loss curve always follows the training loss curve.
+  Table 2 shows that with epoch 13, the validation accuracy value is 94.55%. The F1-score value is 94%, so the classification prediction level given by the system is very good. GMB image data with class 1 to 11 clones are said to be good in the classification process for 39 seconds and are able to obtain an accuracy value above 90%. In other words, the process of classifying the model on the architecture is very optimal. The graph of accuracy improvement in Figure 6 shows the validation accuracy performance very well seeing the difference in the value of training accuracy with validation accuracy. Figure 7 shows the loss training and validation of each epoch. It can be seen that there is no overfitting effect, and the validation loss curve always follows the training loss curve.
   </p>
 
 <figure>
@@ -227,7 +233,12 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
 
 <p>When viewed from the appearance of the confusion matrix table in Figure 7, the data for each class that is predicted against the actual data gets a very good value and gets a little error in the predicted data.</p>
 
+<h2>Conclusion</h2>
 
-
+<p>
+This study has proposed a method for classifying GMB tea leaves (1-11) using the CNN algorithm with the basic LeNet-5 architecture and obtaining accurate results above 90%. The accuracy results obtained are 94.55% on epoch 13 with Adam optimizer (learning rate 0.001) and F1-score of 94%.</p>
+<p>
+As for some suggestions of researchers on the architecture that has been tested. First, to obtain a better and more significant accuracy if the number of GMB image datasets is added. Second, it is necessary to add parameters to the image data test to obtain more complex comparison results.
+</p>
 </body>
 </html>
