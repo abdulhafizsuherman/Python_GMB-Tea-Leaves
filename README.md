@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style>
+    figcaption {
+    padding: 2px;
+    text-align: center;
+    }
+  </style>
+</head>
+
+<body>
   <h1>
     <strong>GAMBUNG TEA LEAVES CLASSIFICATION OF ASSAMICA VARIETIES USING CONVOLUTIONAL NEURAL NETWORK WITH LENET-5 ARCHITECTURE</strong>
   </h1>
@@ -29,9 +39,9 @@ GMB tea leaves have various morphological variations, both in terms of shape & t
 Because the level of similarity is very high due to the same crossing process. Look at the pictures, you can't compare every clones if you don't know the morphology of leaf first.</p>
 
   <figure>
+      <img src="Image/bentuk%20daun%20klon.jpg" alt="Bentuk Daun Klon", title="Fig.1 - Leaf shape of GMB 1 to GMB 11 clones in order">
       <figcaption>Fig.1 - Leaf shape of GMB 1 to GMB 11 clones in order.</figcaption>
-      <img src="Image/bentuk%20daun%20klon.jpg" alt="Bentuk Daun Klon">
-    </figure>      
+  </figure>      
 
     
   <p>
@@ -39,15 +49,19 @@ Because the level of similarity is very high due to the same crossing process. L
 colloquially referred to as convolution, it is simply by convention. Mathematically, the convolution technique is the product of shear points or cross-correlation. This has significance for indexes in an array, as it affects how weights are determined at a given index point. The convolution process can be seen in Figure 2.
     </p>
     <figure>
-      <figcaption>Fig.2 - CNN Process.</figcaption>
       <img src="Image/CNN.jpg" alt="CNN"> 
+      <figcaption>Fig.2 - CNN Process.</figcaption>
     </figure>  
  
   <p>
       The architecture that will be tested in the CNN processing method is the LeNet-5 architecture. LeNet-5 is a CNN-based architecture introduced by LeCun, et al (1998). LeNet-5 has a higher number of independent parameters or number of layers than previous CNN systems.
 </p>
-    
-<img src="Image/arsitektur.jpg", alt="arsitektur LeNet-5", title="Fig.1 - LeNet-5 Architecture."> 
+
+<figure>
+  <img src="Image/arsitektur.jpg", alt="arsitektur LeNet-5", title="Fig.1 - LeNet-5 Architecture."> 
+  <figcaption>Fig.1 - LeNet-5 Architecture.</figcaption>
+</figure>    
+
     
     
    <p>
@@ -131,12 +145,21 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
       </tr>
     </table>
    
+   <figure>
+   
    ![D Sistem](https://user-images.githubusercontent.com/54526318/195740286-1892e18e-0d27-43ea-8583-b04aee29c334.jpg)
+    <figcaption>Fig.4 - Blok Diagram Sistem</figcaption>
+   </figure>
    
    <p>The image data classification method will be carried out in several stages. Figure above shows the stages of the system and will be used as a research method. The first stage is image acquisition, which is the stage of data collection for tea clones from the GMB series, and adjustments to the specifications of the GMB clones are made into 11 classes. The GMB image data was taken using a smartphone camera with size specifications of 13, 25, and 48 megapixels. The second stage is the preprocessing process, namely changing the size of the image data and performing the data augmentation process. After the preprocessing process has been carried out, it will proceed to the third stage with the classification process of training data and test data. The training data is used to obtain the achievement of the image data test, while the test data is used to test the performance and correctness or correlation of the training data in the image model.</p> 
     
    <h2>Results and Discussion</h2>
-    <p>The training data and test data are 1100 and 880, respectively. The training data will be augmented before carrying out the classification process. The size of the image data to be classified is 64×64. Classification system modeling will be trained using the Adam optimizer with a learning rate of 0.001 and look for the best accuracy, loss, and F1-score values for the influence of these parameters.</p>
+
+   <p>Berikut adalah hasil performansi klasifikasi dengan parameter optimizer yang diuji dengan learning rate 0.001 pada Gambar 5</p>
+   
+
+
+  <p>The training data and test data are 1100 and 880, respectively. The training data will be augmented before carrying out the classification process. The size of the image data to be classified is 64×64. Classification system modeling will be trained using the Adam optimizer with a learning rate of 0.001 and look for the best accuracy, loss, and F1-score values for the influence of these parameters.</p>
    <table>
       <caption style="text-align:center">Results Validation accuracy with augmentation data and the best parameters.</caption>
       <tr>
@@ -176,12 +199,35 @@ colloquially referred to as convolution, it is simply by convention. Mathematica
       </tr>
     </table>
   
-  ![lr=0,001](https://user-images.githubusercontent.com/54526318/195752309-3e9a675b-32b6-4de6-aaaf-f48c87370e3e.png)
-  <img
-      src="Image/lr=0,001;ep80%20edit.png"   
-      alt="Training and Validation Opt.Adam"
-      title="Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.">
-    <figure>
-    </figure>
+  <figure>
+    <figcaption>
+    <img 
+    src="Image/lr=0,001;ep80%20edit.png"   
+    alt="Training and Validation Opt.Adam"
+    title="Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.">
+    <figcaption>Fig.5 - Graph of increasing training accuracy and augmentation data validation accuracy with Adam optimizer and learning rate 0.001.</figcaption>
+  </figure>
+  
+  <figure>
+
+  ![loss-Accuracy](Image/lr=0,001;ep80%20edit%20loss.png)
+    <figcaption>Fig.6 - Graph of loss training and loss augmentation data validation with Adam optimizer and learning rate 0.001 </figcaption>
+  </figure>
   </body>
+
+  <p>
+  Table 2 shows that with epoch 13, the validation accuracy value is 94.55%. The F1-score value is 94%, so the classification prediction level given by the system is very good. GMB image data with class 1 to 11 clones are said to be good in the classification process for 39 seconds and are able to obtain an accuracy value above 90%. In other words, the process of classifying the model on the architecture is very optimal. The graph of accuracy improvement in Figure 5 shows the validation accuracy performance very well seeing the difference in the value of training accuracy with validation accuracy. Figure 6 shows the loss training and validation of each epoch. It can be seen that there is no overfitting effect, and the validation loss curve always follows the training loss curve.
+  </p>
+
+<figure>
+
+![Confusion_matrix](Image/Confusion-matrix.png)
+<figcaption>Fig.7 - The prediction value of the confusion matrix in each GMB class.</figcaption>
+</figure>
+
+<p>When viewed from the appearance of the confusion matrix table in Figure 7, the data for each class that is predicted against the actual data gets a very good value and gets a little error in the predicted data.</p>
+
+
+
+</body>
 </html>
